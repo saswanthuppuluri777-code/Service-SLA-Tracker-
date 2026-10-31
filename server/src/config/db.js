@@ -12,7 +12,7 @@ export const connectDB = async () => {
     try {
       console.log(`[DB] Attempting connection to configured MongoDB: ${uri.replace(/\/\/.*@/, '//***@')}`);
       const conn = await mongoose.connect(uri, {
-        serverSelectionTimeoutMS: 4000,
+        serverSelectionTimeoutMS: 10000,
       });
       console.log(`[DB] Connected to MongoDB: ${conn.connection.host}/${conn.connection.name}`);
       return conn;

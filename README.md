@@ -152,3 +152,4 @@ npm test
 | `GET` | `/api/dashboard/metrics` | Returns aggregated metrics, workload breakdown, and urgent tickets |
 | `GET` | `/api/users` | List agents and team members |
 | `POST` | `/api/seed` | Reset and reseed sample dataset across all SLA states |
+

@@ -1,0 +1,13 @@
+{
+  "name": "sla-tracker-root",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/start-all.js",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed",
+    "test:server": "npm --prefix server test"
+  }
+}
